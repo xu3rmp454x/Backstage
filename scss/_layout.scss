@@ -1,0 +1,257 @@
+//全站設定
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a{
+    display: block;
+    text-decoration: none;
+    transition: all .5s;
+}
+.mr-1{
+    margin-right: 16px !important;
+}
+.mb-4{
+    margin-bottom: 30px !important;
+}
+.normal{
+    font-weight: normal;
+}
+// 手指{
+.material-icons{
+    cursor: pointer;
+    transition: all .5s;
+}
+.material-icons:hover{
+    color: $primary;
+}
+.va-B{
+    vertical-align: bottom;
+}
+button:hover{
+    color: $primary !important;
+}
+//全站設定
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrap{
+    position: relative;
+}
+.sidebar{
+    background-color: #EDF4EE;
+    min-width: 296px;
+    height: 100%;
+    padding: 32px;
+    & .logo{
+        background-image: url(/imges/logo-ANSWER.svg);
+        width: 151px;
+        height: 40px;
+        margin-bottom: 32px;
+        @include hide-text;
+    }
+    @include pad(){
+        position: static !important;
+    }
+}
+.menu li{
+    margin-bottom: 31px;
+    font-size: $font-size-base;
+    line-height: 24px;
+    font-weight: bold;
+    & a{
+        color:$a-Color ;
+        text-decoration: none;
+        display: flex;
+    }
+}
+.menu li span{
+    transition: all .5s;
+}
+.menu li:hover:before{
+    content: '';
+    display: block;
+    border-left: 4px solid $primary;
+    width: 4px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+}
+.menu li:hover span{
+    color:$primary ;
+}
+.sidebar_info{  
+    position: absolute;
+    bottom: 32px;
+    & a{
+        color: #0000009A;
+        font-size: $font-size-sm;
+    }
+    @include pad(){
+        bottom: 12px;
+    }
+}
+.sidebar_info h5{
+    line-height: 24px;
+}
+.userBig{
+    background-image: url(../imges/andychen.jpeg);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+main{
+    width: calc(100% - 296px);
+    padding: 12px 32px;
+    min-height: 100vh;
+    position: absolute;
+    right: 0;
+    @include pad(){
+        width: 100%;
+    }
+}
+main header{
+    padding: 32px 0;
+    & h2{
+        font-size: $h4-font-size;
+        color:$a-Color ;
+        line-height: 15px;
+        margin-right: 46px;
+    }
+}
+.new-admin h5{
+    font-size: $h5-font-size;
+    line-height: 33px;
+}
+.pd-35{
+    padding: 35px;
+    border: 1px solid #CDDDCD;
+}
+.pd-1{
+    padding: 1rem 1rem;
+}
+.bg-secondary2{
+    background-color: $bg-secondary;
+    color: #121212;
+}
+.w-416{
+    width: 416px;
+    height: 51px;
+    border-radius: 0;
+}
+.w-416:focus{
+    color: #121212;
+    background-color: $bg-secondary;
+}
+.w-416-2{
+    width: 416px;
+    height: 51px;
+    border-color: $primary !important;
+    background-color: $primary !important;
+    cursor: pointer;
+    transition: all .5s;
+}
+.w-416-2:hover{
+    color: $primary !important;
+    background-color: #fff !important;
+}
+.border-bottom{
+    border-bottom: solid 1px #EDF4EE;
+    width: 416px;
+}
+input[type=checkbox] {
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 20px;
+    position: relative;
+}
+  
+  input[type=checkbox]:after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    content: " ";
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    visibility: visible;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+  input[type=checkbox]:checked:after {
+    content: "✓";
+    font-size: 14px;
+}
+.Access{
+    width: 416px;
+    padding: 15px;
+}
+.btn-Update{
+    background-color: #2A8356;
+    color: #fff;
+    transition: all .5s;
+}
+.btn-Update:hover{
+    background-color: #2A8356;
+    color: #333;
+}
+.btn-Cancel{
+    background-color: #fff;
+    border-color: #2A8356;
+    color: #2A8356;
+}
+.btnW{
+    width: 116px;
+    height: 35px;
+}
+.table td, .table th{
+    border-top: 0 !important;
+    vertical-align: inherit;
+    border-bottom: 1px solid #CDDDCD;
+}
+/*分頁區*/
+.a-link{
+    position: absolute;
+    right: 30px;
+    bottom: -40px;
+}
+.page-link{
+    color: $primary !important;
+}
+.page-link:hover{
+    background-color: $primary !important;
+    color: #fff !important;
+}
+.infoImG{
+    background-image: url(../imges/emir.jpeg);
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+}
+// USER區塊
+.userTitle{
+    width: calc(100% - 141px);
+}
+.user-email{
+    color: #0000009A;
+}
+.user-email:hover{
+    color: #333;
+}
+.modal-header{
+    border-bottom: 0px solid !important;
+}
+.modal-footer{
+    border-top: 0 !important;
+}
+.edit{
+    width: 82px;
+}
+.btn-outline-secondary:hover{
+    background-color:  $primary !important;
+    color: #fff !important;
+}
